@@ -9,4 +9,4 @@ requested. Strictly Ethical.
 
 
 Members:
-Crystal Bagala, Jonathan Rutan, Daniel Blackin, Yanit Girmay, Abrar Rahman
+Crystal Bagala, Jonathan Rutan, Daniel Blackin, Yanit Girmay, Abrar Rahman, Gage Swanston
