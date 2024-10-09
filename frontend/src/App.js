@@ -1,23 +1,47 @@
 import logo from './logo.svg';
 import './App.css';
 
+function Header() {
+  return (
+    <header className= "App-header">
+    <p>
+      Welcome to SomethingEthical
+    </p>
+    </header>
+  )
+}
+
+function Main() {
+  const handleClick = (message) => {
+    alert('We will add a redirect here: ' + message);
+  };
+  return (
+    <div className = "App-main">
+      <Button label="Log In" onClick={() => handleClick('LogIn Clicked')}/>
+      <Button label="Sign Up" onClick={() => handleClick('SignUp Clicked')}/>
+    </div>
+  )
+}
+
+function Footer() {
+
+}
+
+function Button({ label, onClick }) {
+  return (
+    <button onClick={onClick} className = "App-button">
+      {label}
+    </button>
+  )
+}
+
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Main />
+      <Footer />
     </div>
   );
 }
